@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\admin\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\admin\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_ZCFramework.-1568065551.00" t="ExcludeRecursive" />
+    <e p="E:\work\UnityProjects\ZCFramework" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scenes" t="Include">
+          <e p="ZCFramework" t="Include">
+            <e p="Components" t="Include">
+              <e p="BaseComponent" t="Include">
+                <e p="DataComponent.cs" t="Include" />
+                <e p="DataTableComponent.cs" t="Include" />
+                <e p="DownloadComponent.cs" t="Include" />
+                <e p="EventComponent.cs" t="Include" />
+                <e p="FsmComponent.cs" t="Include" />
+                <e p="GameObjComponent.cs" t="Include" />
+                <e p="HttpComponent.cs" t="Include" />
+                <e p="LocalizationComponent.cs" t="Include" />
+                <e p="LuaComponent.cs" t="Include" />
+                <e p="PoolComponent.cs" t="Include" />
+                <e p="ProcedureComponent.cs" t="Include" />
+                <e p="ResourceComponent.cs" t="Include" />
+                <e p="SceneComponent.cs" t="Include" />
+                <e p="SettingComponent.cs" t="Include" />
+                <e p="SocketComponent.cs" t="Include" />
+                <e p="TimeComponent.cs" t="Include" />
+                <e p="UIComponent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Core" t="Include">
+              <e p="IUpdateComponent.cs" t="Include" />
+              <e p="ZCBaseComponent.cs" t="Include" />
+              <e p="ZCComponent.cs" t="Include" />
+            </e>
+            <e p="GameEntry.cs" t="Include" />
+            <e p="Managers" t="Include">
+              <e p="Event" t="Include">
+                <e p="CommonEvent.cs" t="Include" />
+                <e p="CommonEventId.cs" t="Include" />
+                <e p="EventManager.cs" t="Include" />
+                <e p="SocketEvent.cs" t="Include" />
+              </e>
+              <e p="ManagerBase.cs" t="Include" />
+              <e p="Time" t="Include">
+                <e p="TimeAction.cs" t="Include" />
+                <e p="TimeManager.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Test" t="Include">
+              <e p="TestTime.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="ZCFramework.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8971f0e4-d570-407f-a7bf-4b894b65f02f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/SocketEvent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1328">
+              <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+              <folding>
+                <marker date="1561546970504" expanded="true" signature="6:47" ph="..." />
+                <marker date="1561546970504" expanded="true" signature="83:2494" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="95:144" ph="/// Socket事件 ... " />
+                <marker date="1561546970504" expanded="true" signature="187:2491" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="403:976" ph="AddEventListener 添加监听" />
+                <marker date="1561546970504" expanded="true" signature="441:576" ph="/// 添加监听 ... " />
+                <marker date="1561546970504" expanded="true" signature="650:956" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="770:895" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="994:1536" ph="RemoveEventListener 移除监听" />
+                <marker date="1561546970504" expanded="true" signature="1035:1170" ph="/// 移除监听 ... " />
+                <marker date="1561546970504" expanded="true" signature="1247:1517" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="1377:1507" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="1554:2271" ph="Dispatch 派发" />
+                <marker date="1561546970504" expanded="true" signature="1582:1709" ph="/// 派发 ... " />
+                <marker date="1561546970504" expanded="true" signature="1765:2252" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="1908:2229" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="2041:2215" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="2330:2383" ph="{...}" />
+                <marker date="1561546970504" expanded="true" signature="2431:2476" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Time/TimeAction.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="113" column="47" lean-forward="true" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
+              <folding>
+                <marker date="1561692737242" expanded="true" signature="6:32" ph="..." />
+                <marker date="1561692737242" expanded="true" signature="52:5038" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="64:108" ph="/// 定时器 ... " />
+                <marker date="1561692737242" expanded="true" signature="150:5036" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="175:229" ph="/// 定时器状态 ... " />
+                <marker date="1561692737242" expanded="true" signature="270:332" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="350:408" ph="/// 当前运行了多长时间 ... " />
+                <marker date="1561692737242" expanded="true" signature="463:522" ph="/// 距离下次执行间隔时间 ... " />
+                <marker date="1561692737242" expanded="true" signature="579:636" ph="/// 当前运行了多少次 ... " />
+                <marker date="1561692737242" expanded="true" signature="678:734" ph="/// 是否在等待延迟 ... " />
+                <marker date="1561692737242" expanded="true" signature="793:848" ph="/// 每次间隔秒数 ... " />
+                <marker date="1561692737242" expanded="true" signature="900:971" ph="/// 循环次数(-1表示无限循环，0表示循环一次) ... " />
+                <marker date="1561692737242" expanded="true" signature="1017:1072" ph="/// 开始运行委托 ... " />
+                <marker date="1561692737242" expanded="true" signature="1122:1177" ph="/// 运行中的委托 ... " />
+                <marker date="1561692737242" expanded="true" signature="1233:1288" ph="/// 结束运行委托 ... " />
+                <marker date="1561692737242" expanded="true" signature="1351:1743" ph="/// 初始化定时器 ... " />
+                <marker date="1561692737242" expanded="true" signature="1892:2338" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="2356:2410" ph="/// 定时器启动 ... " />
+                <marker date="1561692737242" expanded="true" signature="2436:2872" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="2503:2603" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="2882:2936" ph="/// 定时器暂停 ... " />
+                <marker date="1561692737242" expanded="true" signature="2964:3299" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="3043:3143" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="3309:3363" ph="/// 定时器结束 ... " />
+                <marker date="1561692737242" expanded="true" signature="3390:3832" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="3469:3569" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="3626:3692" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="3859:3915" ph="/// 定时器每帧更新 ... " />
+                <marker date="1561692737242" expanded="true" signature="3946:5030" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="4119:5020" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="4225:4462" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="4643:4741" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="4788:4987" ph="{...}" />
+                <marker date="1561692737242" expanded="true" signature="4889:4968" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/TimeComponent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-40">
+              <caret line="25" column="44" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="44" />
+              <folding>
+                <marker date="1561627719636" expanded="false" signature="6:78" ph="..." />
+                <marker date="1561627719636" expanded="true" signature="97:1554" ph="{...}" />
+                <marker date="1561627719636" expanded="true" signature="109:154" ph="/// 时间组件 ... " />
+                <marker date="1561627719636" expanded="true" signature="221:1552" ph="{...}" />
+                <marker date="1561627719636" expanded="true" signature="237:291" ph="/// 时间管理器 ... " />
+                <marker date="1561627719636" expanded="true" signature="352:1073" ph="定时器管理" />
+                <marker date="1561627719636" expanded="true" signature="374:470" ph="/// 注册定时器 ... " />
+                <marker date="1561627719636" expanded="true" signature="530:604" ph="{...}" />
+                <marker date="1561627719636" expanded="true" signature="614:710" ph="/// 移除定时器 ... " />
+                <marker date="1561627719636" expanded="true" signature="768:840" ph="{...}" />
+                <marker date="1561627719636" expanded="true" signature="850:936" ph="/// 创建定时器 ... " />
+                <marker date="1561627719636" expanded="true" signature="982:1054" ph="{...}" />
+                <marker date="1561627719636" expanded="true" signature="1125:1299" ph="{...}" />
+                <marker date="1561627719636" expanded="true" signature="1331:1389" ph="{...}" />
+                <marker date="1561627719636" expanded="true" signature="1438:1546" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Time/TimeManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="848">
+              <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+              <folding>
+                <marker date="1561633477134" expanded="true" signature="6:47" ph="..." />
+                <marker date="1561633477134" expanded="true" signature="66:2091" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="78:125" ph="/// 定时器管理器 ... " />
+                <marker date="1561633477134" expanded="true" signature="180:1685" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="195:249" ph="/// 定时器链表 ... " />
+                <marker date="1561633477134" expanded="true" signature="346:427" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="454:1346" ph="定时器管理" />
+                <marker date="1561633477134" expanded="true" signature="476:572" ph="/// 注册定时器 ... " />
+                <marker date="1561633477134" expanded="true" signature="632:756" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="774:870" ph="/// 移除定时器 ... " />
+                <marker date="1561633477134" expanded="true" signature="928:1050" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="1068:1154" ph="/// 创建定时器 ... " />
+                <marker date="1561633477134" expanded="true" signature="1200:1327" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="1388:1582" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="1505:1572" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="1621:1679" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="1691:1737" ph="/// 定时器状态 ... " />
+                <marker date="1561633477134" expanded="true" signature="1769:2089" ph="{...}" />
+                <marker date="1561633477134" expanded="true" signature="1793:1844" ph="/// 闲置 ... " />
+                <marker date="1561633477134" expanded="true" signature="1867:1918" ph="/// 运行 ... " />
+                <marker date="1561633477134" expanded="true" signature="1943:1994" ph="/// 暂停 ... " />
+                <marker date="1561633477134" expanded="true" signature="2018:2069" ph="/// 结束 ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Test/TestTime.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+              <folding>
+                <marker date="1561691504000" expanded="true" signature="6:93" ph="..." />
+                <marker date="1561691504000" expanded="true" signature="133:2149" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="183:188" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="243:2147" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="285:2144" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="308:1146" ph="/* TimeAction action1 = GameEntry.Time.CreatTimeAction(); ... */" />
+                <marker date="1561691504000" expanded="true" signature="1274:1340" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="1380:1466" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="1498:1552" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="1698:1809" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="1857:1951" ph="{...}" />
+                <marker date="1561691504000" expanded="true" signature="1991:2100" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>UIComponent</find>
+      <find>Find</find>
+      <find>m_UpdateComponentList</find>
+      <find>m_CurrLoop</find>
+      <find>IsRunning</find>
+      <find>GameEntry.Time.RemoveTimeAction</find>
+      <find>Stop</find>
+      <find>PreviousTimeState</find>
+      <find>Runing</find>
+      <find>m_CurrRunTime</find>
+      <find>m_executionInterval</find>
+      <find>m_DelayTime</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/EventComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SceneComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/GameEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SocketComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/LuaComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/GameObjComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/PoolComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/FsmComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DataTableComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DataComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/ProcedureComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BA00230-811F-478D-B9EB-C6517B2AC448/7d/ce7f1700/LinkedList`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SettingComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/UIComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Time/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/ZCBaseComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/TimeComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/HttpComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/CommonEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/IUpdateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/ZCComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/SocketEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/ManagerBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F0367E2-BACA-4509-821F-867BA72C797D/5c/061f4f88/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Test/TestTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Time/TimeAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DownloadComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/ResourceComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/LocalizationComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/CommonEventId.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/ZCComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/UiComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/ZCBaseComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/ZCComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/ZCBaseComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DataComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DataTableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DownloadComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/FsmComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/GameObjComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/HttpComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/LocalizationComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/LuaComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/PoolComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/ProcedureComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/ResourceComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SceneComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SettingComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SocketComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/UIComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/IUpdateComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/SocketEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/CommonEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/EventComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/CommonEventId.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/ManagerBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/GameEntry.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/EventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/TimeComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Test/TestEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Time/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Test/TestTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Time/TimeAction.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="387" />
+    <option name="y" value="167" />
+    <option name="width" value="1400" />
+    <option name="height" value="825" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="15832">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="15832" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8971f0e4-d570-407f-a7bf-4b894b65f02f" name="Default Changelist" comment="" />
+      <created>1561364682715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561364682715</updated>
+      <workItem from="1561364687494" duration="25000" />
+      <workItem from="1561364756010" duration="1081000" />
+      <workItem from="1561366177611" duration="105000" />
+      <workItem from="1561366294816" duration="5390000" />
+      <workItem from="1561372963064" duration="917000" />
+      <workItem from="1561432303001" duration="4513000" />
+      <workItem from="1561437226798" duration="7368000" />
+      <workItem from="1561536664340" duration="750000" />
+      <workItem from="1561542712482" duration="4070000" />
+      <workItem from="1561607631904" duration="1058000" />
+      <workItem from="1561618575686" duration="12509000" />
+      <workItem from="1561687834291" duration="5742000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43528000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20671284" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.24093817" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F0367E2-BACA-4509-821F-867BA72C797D/5c/061f4f88/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="315" column="13" selection-start-line="315" selection-start-column="13" selection-end-line="315" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BA00230-811F-478D-B9EB-C6517B2AC448/7d/ce7f1700/LinkedList`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3296">
+          <caret line="210" column="29" selection-start-line="210" selection-start-column="29" selection-end-line="210" selection-end-column="29" />
+          <folding>
+            <marker date="1561434460172" expanded="true" signature="0:302" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1561434460172" expanded="true" signature="500:16785" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="770:16783" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1096:1108" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1158:1325" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1401:1439" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1461:1526" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1477:1520" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1562:1626" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1578:1620" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1661:1804" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1677:1798" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1840:1900" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1856:1894" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="1938:1977" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="2049:2246" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="2323:2487" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="2560:2810" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="2888:3119" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="3167:3484" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="3272:3341" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="3352:3456" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="3534:3808" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="3603:3669" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="3680:3778" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="3855:4111" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="4160:4376" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="4401:4755" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="4498:4661" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="4790:4841" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="4887:5521" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="5565:6329" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="5731:6275" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="5775:6046" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="5856:6003" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="6099:6236" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="6377:7246" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="6655:7191" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="6699:6966" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="6780:6923" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="7019:7152" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="7299:7360" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="7411:7475" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="7508:7671" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="7719:7799" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="7830:7991" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="8021:8187" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="8383:8731" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="8789:9387" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="8939:9250" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="9481:9653" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="9728:9869" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="9931:10264" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="9966:10028" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="10039:10191" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="10323:10531" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="10587:10793" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="10830:10890" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="10846:10884" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="10923:11116" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="10939:11110" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="11169:12745" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="11780:11832" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="11843:12739" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="12316:12590" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="12636:12731" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="12790:12851" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="12984:16779" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="13441:13659" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="13736:13954" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="13978:14057" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="13998:14049" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="14091:14356" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="14111:14348" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="14386:14874" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="14571:14659" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="14906:15164" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="15193:15209" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="15316:15632" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="15702:16773" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="16300:16368" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="16381:16717" ph="{...}" />
+            <marker date="1561434460172" expanded="true" signature="16482:16707" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/ZCBaseComponent.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DataComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <marker date="1561458676514" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458676514" expanded="true" signature="97:286" ph="{...}" />
+            <marker date="1561458676514" expanded="true" signature="104:149" ph="/// 数据组件 ... " />
+            <marker date="1561458676514" expanded="true" signature="198:283" ph="{...}" />
+            <marker date="1561458676514" expanded="true" signature="244:277" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DataTableComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1561458692626" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458692626" expanded="true" signature="97:297" ph="{...}" />
+            <marker date="1561458692626" expanded="true" signature="109:155" ph="/// 数据表组件 ... " />
+            <marker date="1561458692626" expanded="true" signature="209:294" ph="{...}" />
+            <marker date="1561458692626" expanded="true" signature="255:288" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/DownloadComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1561458777739" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458777739" expanded="true" signature="97:295" ph="{...}" />
+            <marker date="1561458777739" expanded="true" signature="109:154" ph="/// 下载组件 ... " />
+            <marker date="1561458777739" expanded="true" signature="207:292" ph="{...}" />
+            <marker date="1561458777739" expanded="true" signature="253:286" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/FsmComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1561458783621" expanded="false" signature="6:93" ph="..." />
+            <marker date="1561458783621" expanded="true" signature="112:300" ph="{...}" />
+            <marker date="1561458783621" expanded="true" signature="119:165" ph="/// 状态机组件 ... " />
+            <marker date="1561458783621" expanded="true" signature="213:298" ph="{...}" />
+            <marker date="1561458783621" expanded="true" signature="259:292" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/GameObjComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1561458786285" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458786285" expanded="true" signature="98:297" ph="{...}" />
+            <marker date="1561458786285" expanded="true" signature="110:157" ph="/// 游戏对象组件 ... " />
+            <marker date="1561458786285" expanded="true" signature="209:294" ph="{...}" />
+            <marker date="1561458786285" expanded="true" signature="255:288" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/HttpComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <marker date="1561458793292" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458793292" expanded="true" signature="97:296" ph="{...}" />
+            <marker date="1561458793292" expanded="true" signature="104:151" ph="/// Http组件 ... " />
+            <marker date="1561458793292" expanded="true" signature="200:293" ph="{...}" />
+            <marker date="1561458793292" expanded="true" signature="246:279" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SocketComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1561458814059" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458814059" expanded="true" signature="97:304" ph="{...}" />
+            <marker date="1561458814059" expanded="true" signature="109:158" ph="/// Socket组件 ... " />
+            <marker date="1561458814059" expanded="true" signature="209:302" ph="{...}" />
+            <marker date="1561458814059" expanded="true" signature="263:296" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SettingComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1561458813986" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458813986" expanded="true" signature="98:290" ph="{...}" />
+            <marker date="1561458813986" expanded="true" signature="105:150" ph="/// 设置组件 ... " />
+            <marker date="1561458813986" expanded="true" signature="202:287" ph="{...}" />
+            <marker date="1561458813986" expanded="true" signature="248:281" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/SceneComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1561458814193" expanded="false" signature="6:93" ph="..." />
+            <marker date="1561458814193" expanded="true" signature="112:307" ph="{...}" />
+            <marker date="1561458814193" expanded="true" signature="124:169" ph="/// 场景组件 ... " />
+            <marker date="1561458814193" expanded="true" signature="219:304" ph="{...}" />
+            <marker date="1561458814193" expanded="true" signature="265:298" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/ResourceComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1561458814151" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458814151" expanded="true" signature="97:295" ph="{...}" />
+            <marker date="1561458814151" expanded="true" signature="109:154" ph="/// 资源组件 ... " />
+            <marker date="1561458814151" expanded="true" signature="207:293" ph="{...}" />
+            <marker date="1561458814151" expanded="true" signature="253:286" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/UIComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <marker date="1561458856787" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458856787" expanded="true" signature="97:548" ph="{...}" />
+            <marker date="1561458856787" expanded="true" signature="109:154" ph="/// UI组件 ... " />
+            <marker date="1561458856787" expanded="true" signature="219:546" ph="{...}" />
+            <marker date="1561458856787" expanded="true" signature="284:385" ph="{...}" />
+            <marker date="1561458856787" expanded="true" signature="425:458" ph="{...}" />
+            <marker date="1561458856787" expanded="true" signature="507:540" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/ProcedureComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1561458813896" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458813896" expanded="true" signature="98:292" ph="{...}" />
+            <marker date="1561458813896" expanded="true" signature="105:150" ph="/// 流程组件 ... " />
+            <marker date="1561458813896" expanded="true" signature="204:289" ph="{...}" />
+            <marker date="1561458813896" expanded="true" signature="250:283" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/PoolComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1561458814101" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458814101" expanded="true" signature="98:297" ph="{...}" />
+            <marker date="1561458814101" expanded="true" signature="107:153" ph="/// 对象池组件 ... " />
+            <marker date="1561458814101" expanded="true" signature="202:295" ph="{...}" />
+            <marker date="1561458814101" expanded="true" signature="248:281" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/LuaComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <marker date="1561458813928" expanded="false" signature="6:93" ph="..." />
+            <marker date="1561458813928" expanded="true" signature="113:308" ph="{...}" />
+            <marker date="1561458813928" expanded="true" signature="125:171" ph="/// Lua组件 ... " />
+            <marker date="1561458813928" expanded="true" signature="219:304" ph="{...}" />
+            <marker date="1561458813928" expanded="true" signature="265:298" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/LocalizationComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <marker date="1561458814018" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561458814018" expanded="true" signature="98:314" ph="{...}" />
+            <marker date="1561458814018" expanded="true" signature="110:161" ph="/// 本地化（多语言）组件 ... " />
+            <marker date="1561458814018" expanded="true" signature="218:311" ph="{...}" />
+            <marker date="1561458814018" expanded="true" signature="264:297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/IUpdateComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <marker date="1561439746532" expanded="true" signature="18:477" ph="{...}" />
+            <marker date="1561439746532" expanded="true" signature="30:365" ph="/// Update方法接口，只有需要Update方法的组件才继承这个接口 ... " />
+            <marker date="1561439746532" expanded="true" signature="404:474" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/ZCComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <marker date="1561458574354" expanded="true" signature="38:579" ph="{...}" />
+            <marker date="1561458574354" expanded="true" signature="45:112" ph="/// 所有挂载组件的基类，包括基础组件，游戏中的逻辑组件等 ... " />
+            <marker date="1561458574354" expanded="true" signature="157:576" ph="{...}" />
+            <marker date="1561458574354" expanded="true" signature="227:288" ph="{...}" />
+            <marker date="1561458574354" expanded="true" signature="318:405" ph="{...}" />
+            <marker date="1561458574354" expanded="true" signature="435:478" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Core/ZCBaseComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <marker date="1561458646857" expanded="true" signature="6:78" ph="..." />
+            <marker date="1561458646857" expanded="true" signature="98:445" ph="{...}" />
+            <marker date="1561458646857" expanded="true" signature="115:162" ph="/// 基础组件基类 ... " />
+            <marker date="1561458646857" expanded="true" signature="218:442" ph="{...}" />
+            <marker date="1561458646857" expanded="true" signature="272:393" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/EventComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <marker date="1561547143590" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561547143590" expanded="true" signature="98:924" ph="{...}" />
+            <marker date="1561547143590" expanded="true" signature="105:150" ph="/// 事件组件 ... " />
+            <marker date="1561547143590" expanded="true" signature="200:921" ph="{...}" />
+            <marker date="1561547143590" expanded="true" signature="216:270" ph="/// 事件管理器 ... " />
+            <marker date="1561547143590" expanded="true" signature="324:387" ph="/// Socket事件，给外界调用 ... " />
+            <marker date="1561547143590" expanded="true" signature="436:495" ph="/// 通用事件，给外界调用 ... " />
+            <marker date="1561547143590" expanded="true" signature="595:800" ph="{...}" />
+            <marker date="1561547143590" expanded="true" signature="857:915" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/ManagerBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <marker date="1561619350914" expanded="true" signature="6:59" ph="..." />
+            <marker date="1561619350914" expanded="true" signature="79:143" ph="{...}" />
+            <marker date="1561619350914" expanded="true" signature="119:140" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/CommonEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <marker date="1561546957406" expanded="true" signature="6:47" ph="..." />
+            <marker date="1561546957406" expanded="true" signature="81:2435" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="98:143" ph="/// 通用事件 ... " />
+            <marker date="1561546957406" expanded="true" signature="186:2432" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="436:1002" ph="AddEventListener 添加监听" />
+            <marker date="1561546957406" expanded="true" signature="474:609" ph="/// 添加监听 ... " />
+            <marker date="1561546957406" expanded="true" signature="683:974" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="801:926" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="1012:1556" ph="RemoveEventListener 移除监听" />
+            <marker date="1561546957406" expanded="true" signature="1053:1188" ph="/// 移除监听 ... " />
+            <marker date="1561546957406" expanded="true" signature="1265:1537" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="1395:1527" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="1566:2426" ph="Dispatch 派发" />
+            <marker date="1561546957406" expanded="true" signature="1594:1721" ph="/// 派发 ... " />
+            <marker date="1561546957406" expanded="true" signature="1776:2236" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="1906:2226" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="2039:2212" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="2278:2331" ph="{...}" />
+            <marker date="1561546957406" expanded="true" signature="2362:2407" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/EventManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <marker date="1561627251099" expanded="true" signature="6:92" ph="..." />
+            <marker date="1561627251099" expanded="true" signature="112:584" ph="{...}" />
+            <marker date="1561627251099" expanded="true" signature="171:581" ph="{...}" />
+            <marker date="1561627251099" expanded="true" signature="343:453" ph="{...}" />
+            <marker date="1561627251099" expanded="true" signature="484:574" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/CommonEventId.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1561607650035" expanded="true" signature="18:164" ph="{...}" />
+            <marker date="1561607650035" expanded="true" signature="25:70" ph="/// 事件编号 ... " />
+            <marker date="1561607650035" expanded="true" signature="101:162" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/GameEntry.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="305" selection-start-line="305" selection-end-line="305" />
+          <folding>
+            <marker date="1561624434631" expanded="true" signature="6:92" ph="..." />
+            <marker date="1561624434631" expanded="true" signature="113:7457" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="163:7450" ph="{...}" />
+            <marker date="1561624434631" expanded="false" signature="179:3137" ph="组件属性" />
+            <marker date="1561624434631" expanded="true" signature="200:253" ph="/// 事件组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="296:358" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="368:421" ph="/// 时间组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="462:524" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="534:588" ph="/// 状态机组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="627:689" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="699:752" ph="/// 流程组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="803:865" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="883:937" ph="/// 数据表组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="988:1050" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="1060:1117" ph="/// Socket组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="1162:1224" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="1234:1289" ph="/// Http组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="1330:1392" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="1402:1455" ph="/// 数据组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="1496:1558" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="1568:1627" ph="/// 本地化（多语言）组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="1684:1746" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="1756:1810" ph="/// 对象池组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="1851:1913" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="1923:1976" ph="/// 场景组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="2019:2081" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="2099:2152" ph="/// 设置组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="2199:2261" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="2271:2326" ph="/// 游戏对象组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="2373:2435" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="2445:2498" ph="/// 资源组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="2547:2609" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="2619:2672" ph="/// 下载组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="2721:2783" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="2793:2846" ph="/// UI组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="2883:2945" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="2963:3017" ph="/// Lua组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="3056:3118" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="3147:4687" ph="基础组件管理" />
+            <marker date="1561624434631" expanded="true" signature="3170:3225" ph="/// 基础组件列表 ... " />
+            <marker date="1561624434631" expanded="true" signature="3352:3796" ph="RegisterComponent注册基础组件" />
+            <marker date="1561624434631" expanded="true" signature="3392:3515" ph="/// RegisterComponent基础组件注册到组件列表中 ... " />
+            <marker date="1561624434631" expanded="true" signature="3589:3777" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="3670:3754" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="3806:4659" ph="GetBaseComponent获取基础组件" />
+            <marker date="1561624434631" expanded="true" signature="3845:3979" ph="/// 泛型获取基础组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="4051:4122" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="4133:4260" ph="/// 获取基础组件 ... " />
+            <marker date="1561624434631" expanded="true" signature="4327:4640" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="4461:4592" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="4697:5765" ph="全局的Update方法管理" />
+            <marker date="1561624434631" expanded="true" signature="4849:5292" ph="RegisterUpdateComponent注册Update方法" />
+            <marker date="1561624434631" expanded="true" signature="4899:5026" ph="/// RegisterUpdateComponent注册Update方法 ... " />
+            <marker date="1561624434631" expanded="true" signature="5107:5273" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="5177:5263" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="5302:5737" ph="RemoveUpdateComponent移除Update方法" />
+            <marker date="1561624434631" expanded="true" signature="5350:5475" ph="/// RemoveUpdateComponent移除Update方法 ... " />
+            <marker date="1561624434631" expanded="true" signature="5554:5718" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="5623:5708" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="5795:5848" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="5867:5925" ph="/// 基础组件属性的赋值 ... " />
+            <marker date="1561624434631" expanded="true" signature="5966:6968" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="6992:7200" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="7122:7190" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="7242:7444" ph="{...}" />
+            <marker date="1561624434631" expanded="true" signature="7367:7434" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Test/TestEvent.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Event/SocketEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1328">
+          <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+          <folding>
+            <marker date="1561546970504" expanded="true" signature="6:47" ph="..." />
+            <marker date="1561546970504" expanded="true" signature="83:2494" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="95:144" ph="/// Socket事件 ... " />
+            <marker date="1561546970504" expanded="true" signature="187:2491" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="403:976" ph="AddEventListener 添加监听" />
+            <marker date="1561546970504" expanded="true" signature="441:576" ph="/// 添加监听 ... " />
+            <marker date="1561546970504" expanded="true" signature="650:956" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="770:895" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="994:1536" ph="RemoveEventListener 移除监听" />
+            <marker date="1561546970504" expanded="true" signature="1035:1170" ph="/// 移除监听 ... " />
+            <marker date="1561546970504" expanded="true" signature="1247:1517" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="1377:1507" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="1554:2271" ph="Dispatch 派发" />
+            <marker date="1561546970504" expanded="true" signature="1582:1709" ph="/// 派发 ... " />
+            <marker date="1561546970504" expanded="true" signature="1765:2252" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="1908:2229" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="2041:2215" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="2330:2383" ph="{...}" />
+            <marker date="1561546970504" expanded="true" signature="2431:2476" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Components/BaseComponent/TimeComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <marker date="1561627719636" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561627719636" expanded="true" signature="97:1554" ph="{...}" />
+            <marker date="1561627719636" expanded="true" signature="109:154" ph="/// 时间组件 ... " />
+            <marker date="1561627719636" expanded="true" signature="221:1552" ph="{...}" />
+            <marker date="1561627719636" expanded="true" signature="237:291" ph="/// 时间管理器 ... " />
+            <marker date="1561627719636" expanded="true" signature="352:1073" ph="定时器管理" />
+            <marker date="1561627719636" expanded="true" signature="374:470" ph="/// 注册定时器 ... " />
+            <marker date="1561627719636" expanded="true" signature="530:604" ph="{...}" />
+            <marker date="1561627719636" expanded="true" signature="614:710" ph="/// 移除定时器 ... " />
+            <marker date="1561627719636" expanded="true" signature="768:840" ph="{...}" />
+            <marker date="1561627719636" expanded="true" signature="850:936" ph="/// 创建定时器 ... " />
+            <marker date="1561627719636" expanded="true" signature="982:1054" ph="{...}" />
+            <marker date="1561627719636" expanded="true" signature="1125:1299" ph="{...}" />
+            <marker date="1561627719636" expanded="true" signature="1331:1389" ph="{...}" />
+            <marker date="1561627719636" expanded="true" signature="1438:1546" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Test/TestTime.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding>
+            <marker date="1561691504000" expanded="true" signature="6:93" ph="..." />
+            <marker date="1561691504000" expanded="true" signature="133:2149" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="183:188" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="243:2147" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="285:2144" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="308:1146" ph="/* TimeAction action1 = GameEntry.Time.CreatTimeAction(); ... */" />
+            <marker date="1561691504000" expanded="true" signature="1274:1340" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="1380:1466" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="1498:1552" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="1698:1809" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="1857:1951" ph="{...}" />
+            <marker date="1561691504000" expanded="true" signature="1991:2100" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Time/TimeManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <marker date="1561633477134" expanded="true" signature="6:47" ph="..." />
+            <marker date="1561633477134" expanded="true" signature="66:2091" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="78:125" ph="/// 定时器管理器 ... " />
+            <marker date="1561633477134" expanded="true" signature="180:1685" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="195:249" ph="/// 定时器链表 ... " />
+            <marker date="1561633477134" expanded="true" signature="346:427" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="454:1346" ph="定时器管理" />
+            <marker date="1561633477134" expanded="true" signature="476:572" ph="/// 注册定时器 ... " />
+            <marker date="1561633477134" expanded="true" signature="632:756" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="774:870" ph="/// 移除定时器 ... " />
+            <marker date="1561633477134" expanded="true" signature="928:1050" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="1068:1154" ph="/// 创建定时器 ... " />
+            <marker date="1561633477134" expanded="true" signature="1200:1327" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="1388:1582" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="1505:1572" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="1621:1679" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="1691:1737" ph="/// 定时器状态 ... " />
+            <marker date="1561633477134" expanded="true" signature="1769:2089" ph="{...}" />
+            <marker date="1561633477134" expanded="true" signature="1793:1844" ph="/// 闲置 ... " />
+            <marker date="1561633477134" expanded="true" signature="1867:1918" ph="/// 运行 ... " />
+            <marker date="1561633477134" expanded="true" signature="1943:1994" ph="/// 暂停 ... " />
+            <marker date="1561633477134" expanded="true" signature="2018:2069" ph="/// 结束 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/ZCFramework/Managers/Time/TimeAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="113" column="47" lean-forward="true" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
+          <folding>
+            <marker date="1561692737242" expanded="true" signature="6:32" ph="..." />
+            <marker date="1561692737242" expanded="true" signature="52:5038" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="64:108" ph="/// 定时器 ... " />
+            <marker date="1561692737242" expanded="true" signature="150:5036" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="175:229" ph="/// 定时器状态 ... " />
+            <marker date="1561692737242" expanded="true" signature="270:332" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="350:408" ph="/// 当前运行了多长时间 ... " />
+            <marker date="1561692737242" expanded="true" signature="463:522" ph="/// 距离下次执行间隔时间 ... " />
+            <marker date="1561692737242" expanded="true" signature="579:636" ph="/// 当前运行了多少次 ... " />
+            <marker date="1561692737242" expanded="true" signature="678:734" ph="/// 是否在等待延迟 ... " />
+            <marker date="1561692737242" expanded="true" signature="793:848" ph="/// 每次间隔秒数 ... " />
+            <marker date="1561692737242" expanded="true" signature="900:971" ph="/// 循环次数(-1表示无限循环，0表示循环一次) ... " />
+            <marker date="1561692737242" expanded="true" signature="1017:1072" ph="/// 开始运行委托 ... " />
+            <marker date="1561692737242" expanded="true" signature="1122:1177" ph="/// 运行中的委托 ... " />
+            <marker date="1561692737242" expanded="true" signature="1233:1288" ph="/// 结束运行委托 ... " />
+            <marker date="1561692737242" expanded="true" signature="1351:1743" ph="/// 初始化定时器 ... " />
+            <marker date="1561692737242" expanded="true" signature="1892:2338" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="2356:2410" ph="/// 定时器启动 ... " />
+            <marker date="1561692737242" expanded="true" signature="2436:2872" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="2503:2603" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="2882:2936" ph="/// 定时器暂停 ... " />
+            <marker date="1561692737242" expanded="true" signature="2964:3299" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="3043:3143" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="3309:3363" ph="/// 定时器结束 ... " />
+            <marker date="1561692737242" expanded="true" signature="3390:3832" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="3469:3569" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="3626:3692" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="3859:3915" ph="/// 定时器每帧更新 ... " />
+            <marker date="1561692737242" expanded="true" signature="3946:5030" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="4119:5020" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="4225:4462" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="4643:4741" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="4788:4987" ph="{...}" />
+            <marker date="1561692737242" expanded="true" signature="4889:4968" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
