@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 
@@ -11,7 +9,7 @@ namespace ZCFrame
     /// <summary>
     /// 类对象池
     /// </summary>
-    public class ClassObjectPool : IDisposable
+    internal class ClassObjectPool :  IDisposable
     {
 
         private Dictionary<int, Queue<object>> m_ClassObjectPoolDic = null;
