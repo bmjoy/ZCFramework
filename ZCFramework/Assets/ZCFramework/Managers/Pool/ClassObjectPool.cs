@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -9,7 +10,7 @@ namespace ZCFrame
     /// <summary>
     /// 类对象池
     /// </summary>
-    internal class ClassObjectPool :  IDisposable
+    public class ClassObjectPool : IDisposable
     {
 
         private Dictionary<int, Queue<object>> m_ClassObjectPoolDic = null;
@@ -24,12 +25,31 @@ namespace ZCFrame
             private set;
         }
 
+        //对象池在编辑器面板中显示时，保存池中对象的计数
+        #if UNITY_EDITOR
+        public Dictionary<Type, int> InspectorInDic = new Dictionary<Type, int>();
+        //对象池在编辑器面板中显示时，保存池外对象的计数
+        public Dictionary<Type, int> InspectorOutDic = new Dictionary<Type, int>(); 
+        #endif
         
-        public ClassObjectPool()
+        
+        internal ClassObjectPool()
         {
             m_ClassObjectPoolDic = new Dictionary<int, Queue<object>>();
             ClassObjectCountDic = new Dictionary<int, byte>();
         
+        }
+
+
+        /// <summary>
+        /// 设置常驻数量
+        /// </summary>
+        /// <param name="count"></param>
+        /// <typeparam name="T"></typeparam>
+        public void SetResideCount<T>(byte count) where T : class
+        {
+            int key = typeof(T).GetHashCode();
+            ClassObjectCountDic[key] = count;
         }
 
 
@@ -44,6 +64,7 @@ namespace ZCFrame
             lock (m_ClassObjectPoolDic)
             {
                 int key = typeof(T).GetHashCode();
+               
                 Queue<object> queue = null;
                 if (! m_ClassObjectPoolDic.TryGetValue(key, out  queue))
                 {
@@ -51,13 +72,17 @@ namespace ZCFrame
                     m_ClassObjectPoolDic.Add(key, queue);
                 }
                 
+                #if UNITY_EDITOR
+                //出池计数
+                DequeueAndEnqueueCount(typeof(T), true);
+                #endif
+
+                Type type = typeof(T);
+                
                 if (queue.Count > 0)
                 {
-                    object obj;
-                    obj = queue.Dequeue();
-                    
+                    object obj = queue.Dequeue();
                     return (T)obj;
-                    
                 }
                 else
                 {
@@ -66,6 +91,7 @@ namespace ZCFrame
             }
         }
 
+        
         /// <summary>
         /// 类对象池：回池
         /// </summary>
@@ -75,11 +101,24 @@ namespace ZCFrame
 
             lock (m_ClassObjectPoolDic)
             {
-                int key = obj.GetHashCode();
+                int key = obj.GetType().GetHashCode();
+            
                 Queue<object> queue = null;
 
                 if (m_ClassObjectPoolDic.TryGetValue(key, out  queue))
                 {
+                    
+                    if (queue.Contains(obj))
+                    {
+                        Debug.LogError(string.Format("回池失败，{0:s} 重复入池", obj.ToString()));
+                        return;
+                    }
+                    
+                    #if UNITY_EDITOR
+                    //回池计数
+                    DequeueAndEnqueueCount(obj.GetType(), false);
+                    #endif
+                    
                     queue.Enqueue(obj);
                                     
                 }
@@ -89,14 +128,13 @@ namespace ZCFrame
                 }
             }
         }
-
         #endregion
 
 
         /// <summary>
         /// 从池中释放长久未使用的对象
         /// </summary>
-        public void ClearPool()
+        internal void ClearPool()
         {
             lock (m_ClassObjectPoolDic)
             {
@@ -109,6 +147,10 @@ namespace ZCFrame
                     int key = enumerator.Current.Key;
                     Queue<object> queue = m_ClassObjectPoolDic[key];
 
+                    #if UNITY_EDITOR
+                    Type t = null;
+                    #endif
+                    
                     queueCount = queue.Count;
                     byte resideCount = 0;
                     
@@ -118,10 +160,25 @@ namespace ZCFrame
                         {
                             queueCount--;
                             object obj = queue.Dequeue();
-                        
+
+                            #if UNITY_EDITOR
+                            t = obj.GetType();
+                            InspectorInDic[t]--;
+                            #endif
                         }
+
+                        #if UNITY_EDITOR
+//                        if (queueCount <= 0)
+//                        {
+//                            if (t != null)
+//                            {
+//                                InspectorInDic.Remove(t);
+//                            }
+//                        }
+                        #endif
                     }
                 }
+                
                 //整个项目有一处GC即可，间隔最好大于60s一次
                 GC.Collect();
             }
@@ -129,11 +186,50 @@ namespace ZCFrame
         }
 
         
+        #region 出池与回池计数
+        #if UNITY_EDITOR
+        /// <summary>
+        /// 出池与回池计数
+        /// </summary>
+        /// <param name="t">对象类型</param>
+        /// <param name="dequeueOrEnqueue">True 为出池 False 为入池 </param>
+        private void DequeueAndEnqueueCount(Type t, bool dequeueOrEnqueue)
+        {
+            
+            if (InspectorInDic.ContainsKey(t))
+            {
+                if (dequeueOrEnqueue)
+                {
+                    if (InspectorInDic[t] > 0)
+                    {
+                        InspectorInDic[t]--;
+                    }
+
+                    InspectorOutDic[t]++;
+                }
+                else
+                {
+                    InspectorInDic[t]++;
+                    InspectorOutDic[t]--;
+                }
+            }
+            else
+            {
+                InspectorInDic[t] = 0;
+                InspectorOutDic[t] = 1;
+            }
+        }
+        #endif
+        #endregion
+       
+
         public void Dispose()
         {
             m_ClassObjectPoolDic.Clear();
         }
+        
     }
+    
 }
 
 

@@ -260,6 +260,7 @@ namespace ZCFrame
         }
 
         
+        
         /// <summary>
         /// 基础组件属性的赋值
         /// </summary>
@@ -303,6 +304,9 @@ namespace ZCFrame
     }
     
 }
+
+
+
 
 
 

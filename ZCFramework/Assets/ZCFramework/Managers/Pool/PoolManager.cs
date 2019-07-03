@@ -7,7 +7,7 @@ namespace ZCFrame
     /// <summary>
     /// 对象池管理
     /// </summary>
-    internal class PoolManager : ManagerBase, IDisposable
+    public class PoolManager : ManagerBase, IDisposable
     {
 
         public ClassObjectPool ClassObjectPool
@@ -22,23 +22,24 @@ namespace ZCFrame
             private set;
         }
 
-        internal PoolManager()
+        public PoolManager(ObjectPoolSource ObjectPoolSource)
         {
             ClassObjectPool = new ClassObjectPool();
-            GameObjectPool = new GameObjectPool();
+            GameObjectPool = new GameObjectPool(ObjectPoolSource);
         }
 
         /// <summary>
         /// 释放类对象池
         /// </summary>
-        public void ClearClassObjectPool()
+        internal void ClearClassObjectPool()
         {
-//            ClassObjectPool.ClearPool();
+            ClassObjectPool.ClearPool();
         }
 
         public void Dispose()
         {
-//            ClassObjectPool.Dispose();
+            ClassObjectPool.Dispose();
+            GameObjectPool.Dispose();
         }
     }
 
