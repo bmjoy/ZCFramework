@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -116,6 +117,43 @@ namespace ZCFrame
         {
             PoolManager.GameObjectPool.Despawn(t);
         }
+        #endregion
+        
+        
+        #region 变量对象池的出池和回池
+//        /// <summary>
+//        /// 变量对象池锁
+//        /// </summary>
+//        private object m_VarObjectLock = new object();
+//        
+//        
+//        /// <summary>
+//        /// 变量对象出池
+//        /// </summary>
+//        /// <typeparam name="T"></typeparam>
+//        /// <returns></returns>
+//        public T DequeueVarObject<T>() where T : VariableBase, new()
+//        {
+//            
+//            lock (m_VarObjectLock)
+//            {
+//                T item = DequeueClassObject<T>();
+//                return item;
+//            }    
+//        }
+//
+//        /// <summary>
+//        /// 变量对象池回池
+//        /// </summary>
+//        /// <param name="item"></param>
+//        /// <typeparam name="T"></typeparam>
+//        public void EnqueueVarObject<T>(T item) where T : VariableBase
+//        {
+//            lock (m_VarObjectLock)
+//            {
+//                EnqueueClassObject(item);
+//            }
+//        }
         #endregion
         
         

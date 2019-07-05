@@ -48,6 +48,28 @@ namespace ZCFrame
         }
         
         /// <summary>
+        /// 设置参数字典值
+        /// </summary>
+        /// <typeparam name="TData"></typeparam>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        public void SetData<TData>(string key, TData value) where TData : VariableBase
+        {
+            m_ProcedureManager.CurrFsm.SetData(key, value);
+        }
+
+        /// <summary>
+        /// 获取参数字典里面的值
+        /// </summary>
+        /// <typeparam name="TData"></typeparam>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public TData GetData<TData>(string key) where TData : VariableBase
+        {
+            return m_ProcedureManager.CurrFsm.GetData<TData>(key);
+        }
+
+        /// <summary>
         /// 切换状态
         /// </summary>
         /// <param name="state"></param>

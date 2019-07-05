@@ -24,6 +24,8 @@ namespace ZCFrame
             m_FsmManager = new FsmManager();
         }
 
+        
+        
         #region 创建、销毁状态机
         /// <summary>
         /// 创建状态机

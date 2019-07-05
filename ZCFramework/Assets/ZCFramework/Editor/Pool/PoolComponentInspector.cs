@@ -47,7 +47,17 @@ namespace ZCFrame
                 foreach (var item in component.PoolManager.ClassObjectPool.InspectorInDic)
                 {
                     GUILayout.BeginHorizontal("box");
-                    GUILayout.Label(item.Key.Name);
+                    
+                    
+                    if (item.Key.BaseType.Equals(typeof(VariableBase)))    
+                    {
+                        GUILayout.Label(item.Key.UnderlyingSystemType.ToString());
+                    }
+                    else
+                    {
+                        GUILayout.Label(item.Key.Name);
+                    }
+                    
                     GUILayout.Label(item.Value.ToString(), GUILayout.Width(60));
 
                     int outCount = 0;
@@ -79,7 +89,6 @@ namespace ZCFrame
                 foreach (KeyValuePair<ObjectTag, Queue<GameObject>> objetPool in component.PoolManager.GameObjectPool.ObjectPoolDic)
                 {
                     
-                    
                     GUILayout.BeginHorizontal("box");
                     GUILayout.Label(objetPool.Key.ToString());
                     GUILayout.Label(objetPool.Value.Count.ToString(),GUILayout.Width(60));
@@ -94,31 +103,7 @@ namespace ZCFrame
             
             //======================游戏对象池计数结束========================
             
-            //======================变量计数开始========================
-//            GUILayout.Space(10);
-//            GUILayout.BeginVertical("box");
-//            GUILayout.BeginHorizontal("box");
-//            GUILayout.Label("变量");
-//            GUILayout.Label("数量", GUILayout.Width(60));
-//            GUILayout.EndHorizontal();
-//
-//            if (component != null)
-//            {
-//                foreach (var item in component.VarObjectInspectorDic)
-//                {
-//                    GUILayout.BeginHorizontal("box");
-//                    GUILayout.Label(item.Key.Name);
-//                    GUILayout.Label(item.Value.ToString(), GUILayout.Width(60));
-//
-//                    GUILayout.EndHorizontal();
-//                }
-//            }
-//            GUILayout.EndVertical();
-//            //======================变量计数结束========================
-//
-//            GUILayout.Space(10);
-//            EditorGUILayout.PropertyField(m_GameObjectPoolGroups, true);
-             serializedObject.ApplyModifiedProperties();
+            serializedObject.ApplyModifiedProperties();
             //重绘
             Repaint();
         }

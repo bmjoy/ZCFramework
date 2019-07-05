@@ -18,6 +18,10 @@ namespace ZCFrame
         /// </summary>
         private Dictionary<byte, FsmState<T>> m_StateDic;
 
+        /// <summary>
+        /// 参数字典
+        /// </summary>
+        private Dictionary<string, VariableBase> m_ParamDic;
 
         /// <summary>
         /// 构造函数
@@ -28,7 +32,8 @@ namespace ZCFrame
         public Fsm(int fsmId, T owner,params FsmState<T>[] states) : base(fsmId, owner.GetType())
         {
             m_StateDic = new Dictionary<byte, FsmState<T>>();
-
+            m_ParamDic = new Dictionary<string, VariableBase>();
+            
             //把状态加入字典
             int len = states.Length;
             for (int i = 0; i < len; i++)
@@ -43,6 +48,51 @@ namespace ZCFrame
             m_CurrState = m_StateDic[CurrStateType];
             m_CurrState.OnEnable();
         }
+
+
+        /// <summary>
+        /// 设置参数字典
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <typeparam name="TData"></typeparam>
+        public void SetData<TData>(string key, TData value) where TData : VariableBase
+        {
+            
+            VariableBase itemBase;
+            Variable<TData> item;
+            
+            if (!m_ParamDic.TryGetValue(key, out itemBase))
+            {
+               item = new Variable<TData>();
+               m_ParamDic.Add(key, item);
+            }
+
+            item = m_ParamDic[key] as Variable<TData>;
+            item.Value = value;
+            m_ParamDic[key] = item;
+        }
+
+
+        /// <summary>
+        /// 获取参数字典里面的值
+        /// </summary>
+        /// <param name="key"></param>
+        /// <typeparam name="TData"></typeparam>
+        /// <returns></returns>
+        public TData GetData<TData>(string key)  where TData : VariableBase
+        {
+            VariableBase itemBase;
+            
+            if (m_ParamDic.TryGetValue(key, out itemBase))
+            {
+                Variable<TData> item = itemBase as Variable<TData>;
+                return item.Value;
+            }
+            
+            return default(TData);
+        }
+
 
         /// <summary>
         /// 获取某个状态
@@ -103,6 +153,7 @@ namespace ZCFrame
             }
             
             m_StateDic.Clear();
+            m_ParamDic.Clear();
         }
     } 
 
