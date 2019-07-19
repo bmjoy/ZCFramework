@@ -38,8 +38,7 @@ namespace ZCFrame
         /// <param name="action"></param>
         internal void RemoveTimeAction(TimeAction action)
         {
-            m_TimeActionList.Remove(action);
-           // GameEntry.Pool.EnqueueClassObject(action);
+            GameEntry.Pool.EnqueueClassObject(action);
         }
         
         /// <summary>
@@ -48,8 +47,7 @@ namespace ZCFrame
         /// <returns></returns>
         internal TimeAction CreatTimeAction()
         {
-            return new TimeAction();
-//            return GameEntry.Pool.DequeueClassObject<TimeAction>();
+            return GameEntry.Pool.DequeueClassObject<TimeAction>();
         }
         #endregion
         

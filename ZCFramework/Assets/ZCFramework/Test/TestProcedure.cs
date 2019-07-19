@@ -52,8 +52,7 @@ public class TestProcedure : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            Variable<int> c = GameEntry.Procedure.GetData<Variable<int>>("zc");
-            Debug.Log(c.Value); 
+          
             GameEntry.Procedure.ChangeState(ProcedureState.Preload);
         }
     }

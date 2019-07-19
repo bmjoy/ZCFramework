@@ -16,12 +16,12 @@ namespace ZCFrame
         /// <summary>
         /// 状态字典
         /// </summary>
-        private Dictionary<byte, FsmState<T>> m_StateDic;
+        private readonly Dictionary<byte, FsmState<T>> m_StateDic;
 
         /// <summary>
         /// 参数字典
         /// </summary>
-        private Dictionary<string, VariableBase> m_ParamDic;
+        private readonly Dictionary<string, VariableBase> m_ParamDic;
 
         /// <summary>
         /// 构造函数
@@ -42,9 +42,15 @@ namespace ZCFrame
                 state.CurrFsm = this;
                 m_StateDic[(byte)i] = state;
             }
+        }
 
+        /// <summary>
+        /// 设置默认状态
+        /// </summary>
+        public void SetDefaultState(byte defaultState = 0)
+        {
             //设置默认状态
-            CurrStateType = 0;
+            CurrStateType = defaultState;
             m_CurrState = m_StateDic[CurrStateType];
             m_CurrState.OnEnable();
         }
@@ -58,14 +64,13 @@ namespace ZCFrame
         /// <typeparam name="TData"></typeparam>
         public void SetData<TData>(string key, TData value) where TData : VariableBase
         {
-            
-            VariableBase itemBase;
+
             Variable<TData> item;
-            
-            if (!m_ParamDic.TryGetValue(key, out itemBase))
+
+            if (!m_ParamDic.ContainsKey(key))
             {
-               item = new Variable<TData>();
-               m_ParamDic.Add(key, item);
+                item = new Variable<TData>();
+                m_ParamDic.Add(key, item);
             }
 
             item = m_ParamDic[key] as Variable<TData>;
@@ -82,15 +87,14 @@ namespace ZCFrame
         /// <returns></returns>
         public TData GetData<TData>(string key)  where TData : VariableBase
         {
-            VariableBase itemBase;
-            
-            if (m_ParamDic.TryGetValue(key, out itemBase))
+           
+            if (m_ParamDic.TryGetValue(key, out VariableBase itemBase))
             {
                 Variable<TData> item = itemBase as Variable<TData>;
                 return item.Value;
             }
             
-            return default(TData);
+            return default;
         }
 
 
@@ -101,8 +105,7 @@ namespace ZCFrame
         /// <returns></returns>
         public FsmState<T> GetState(byte stateType)
         {
-            FsmState<T> state = null;
-            m_StateDic.TryGetValue(stateType, out state);
+            m_StateDic.TryGetValue(stateType, out FsmState<T> state);
             return state;
         }
 

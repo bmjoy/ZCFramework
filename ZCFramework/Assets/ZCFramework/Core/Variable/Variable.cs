@@ -3,12 +3,12 @@
 
 namespace ZCFrame
 {
-    
+
     /// <summary>
-    /// 变量泛型基类
+    /// 变量泛型基类（Int,Float, Bool,String, Long,Byte,Color）
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class Variable<T> : VariableBase
+    public class Variable<T> : VariableBase 
     {
 
         /// <summary>
@@ -26,12 +26,15 @@ namespace ZCFrame
         
         public static Variable<T> Alloc()
         {
+         
             //要从对象池获取
             Variable<T> var = GameEntry.Pool.DequeueClassObject<Variable<T>>();
-            var.Value = default(T);
+            //设置为默认值 (如果为引用类型 会为Null,需要new 赋值,违背了对象池的初衷,暂时未想到好的优化方式)
+            var.Value = default;
             var.Retain();
             return var;
         }
+
 
         /// <summary>
         /// 分配一个对象

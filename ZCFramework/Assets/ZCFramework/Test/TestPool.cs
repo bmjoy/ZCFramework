@@ -1,7 +1,8 @@
-﻿
+﻿using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using ZCFrame;
+
 
 public class TestPool : MonoBehaviour
 {
@@ -13,9 +14,22 @@ public class TestPool : MonoBehaviour
     {
         GameEntry.Pool.SetClassObjectResideCount<Person>(2);
         GameEntry.Pool.SetClassObjectResideCount<Animal>(3);
+
+
+        Variable<List<int>> xx = Variable<List<int>>.Alloc();
+        Debug.Log(xx.Value.Count);
+        //Dictionary<int, GameObject> dic = new Dictionary<int, GameObject>();
+        //for (int i = 0; i < 5; i++)
+        //{
+        //    GameObject go = new GameObject();
+        //    go.name = i + "";
+        //    dic.Add(i, go);
+        //}
+
+
     }
-    
-    
+
+
     void Update()
     {
         

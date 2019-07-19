@@ -142,14 +142,15 @@ namespace ZCFrame
                 Debug.Log("定时器生命周期已结束，请重新初始化");
                 return;
             }
-            
-            if (m_OnCompleteAction != null)
-            {
-                m_OnCompleteAction();
-            }
+
+            m_OnCompleteAction?.Invoke();
 
             IsDelaying = false;
             TimeState = TimeActionState.Stop;
+
+            m_OnStartAction = null;
+            m_OnUpdateAction = null;
+            m_OnCompleteAction = null;
             GameEntry.Time.RemoveTimeAction(this);
         }
         
@@ -171,20 +172,17 @@ namespace ZCFrame
                  {
                       IsDelaying = false;
                       m_CurrRunTime = Time.time;
-                                     
-                      if (m_OnStartAction != null) m_OnStartAction();
-                 }
+
+                    m_OnStartAction?.Invoke();
+                }
 
                  if (IsDelaying) return;
                      
                  m_CurrRunTime = Time.time + m_Interval;
-            
-                 if (m_OnUpdateAction != null)
-                 {
-                     m_OnUpdateAction(m_Loop - m_CurrLoop);
-                 }
-            
-                 if (m_Loop > -1)
+
+                m_OnUpdateAction?.Invoke(m_Loop - m_CurrLoop);
+
+                if (m_Loop > -1)
                  {
                      m_CurrLoop++;
                      if (m_CurrLoop >= m_Loop)

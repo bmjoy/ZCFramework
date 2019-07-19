@@ -14,7 +14,7 @@ namespace ZCFrame
     public class ClassObjectPool : IDisposable
     {
 
-        private Dictionary<int, Queue<object>> m_ClassObjectPoolDic = null;
+        private readonly Dictionary<int, Queue<object>> m_ClassObjectPoolDic = null;
 
 
         /// <summary>
