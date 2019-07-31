@@ -18,7 +18,7 @@ namespace ZCFrame
             //base.OnInspectorGUI();
             serializedObject.Update();
             
-            PoolComponent component = base.target as PoolComponent;
+            PoolComponent component = target as PoolComponent;
             
             //绘制游戏对象池源
             component.ObjectPoolSource = EditorGUILayout.ObjectField("游戏对象池源",component.ObjectPoolSource,typeof(ObjectPoolSource),true) as ObjectPoolSource;

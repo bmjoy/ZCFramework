@@ -48,7 +48,7 @@ namespace ZCFrame
                     ReorderableList.defaultBehaviours.DoRemoveButton(list);
                 }
             };
-            
+
         }
     
     }
