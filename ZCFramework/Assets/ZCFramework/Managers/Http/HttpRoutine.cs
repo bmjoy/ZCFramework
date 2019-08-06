@@ -113,6 +113,7 @@ namespace ZCFrame
             yield return data.SendWebRequest();
 
             IsBusy = false;
+
             if (data.isHttpError || data.isNetworkError)
             {
                 m_CallBackArgs.HasError = true;
@@ -123,15 +124,11 @@ namespace ZCFrame
                 m_CallBackArgs.HasError = false;
                 m_CallBackArgs.Value = data.downloadHandler.text;
             }
-            
-            if (callBack != null)
-            {
-                callBack(m_CallBackArgs);
-            }
-            
-            data.Dispose();
-            data = null;
 
+            callBack?.Invoke(m_CallBackArgs);
+
+            data.Dispose();
+           
             //支持多个HttpRoutine，结束之后回池
             GameEntry.Pool.EnqueueClassObject(this);
         }

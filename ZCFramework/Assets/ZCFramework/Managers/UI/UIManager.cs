@@ -171,11 +171,13 @@ namespace ZCFrame
         {
             closeUIFormList.Clear();
 
-            foreach (UIFormBase uiForm in uiFormDic.Values)
-            {
-                uiForm.Dispose();
-            }
+            var enumerator = uiFormDic.GetEnumerator();
 
+            while (enumerator.MoveNext())
+            {
+                enumerator.Current.Value.Dispose();
+            }
+      
             uiFormDic.Clear();
 
         }

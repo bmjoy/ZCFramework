@@ -10,7 +10,7 @@ namespace ZCFrame
 
         private const string LocalizatioCode = "LanguageCode";
 
-        private List<LanguageInfo> m_LanguageInfoList = null;
+        private readonly List<LanguageInfo> m_LanguageInfoList = null;
         private Dictionary<string, TermData> termDataDic;
         private int LocalizatioCodeIndex = 0;
 
@@ -19,6 +19,10 @@ namespace ZCFrame
         /// </summary>
         private event Action LanguageEvent = null;
 
+        /// <summary>
+        /// 默认的语言编码
+        /// </summary>
+        private readonly LanguageCode defaultCode = LanguageCode.en;
 
 
         public LocalizationManager(TextAsset localization, List<LanguageInfo> LanguageInfoList)
@@ -30,7 +34,7 @@ namespace ZCFrame
 
             if (PlayerPrefs.HasKey(LocalizatioCode))
             {
-                string codeName = PlayerPrefs.GetString(LocalizatioCode, "en");
+                string codeName = PlayerPrefs.GetString(LocalizatioCode, defaultCode.ToString());
                 code = (LanguageCode)Enum.Parse(typeof(LanguageCode), codeName);
             }
             else
@@ -143,7 +147,7 @@ namespace ZCFrame
                 case SystemLanguage.Japanese: return LanguageCode.ja;
                 case SystemLanguage.Russian: return LanguageCode.ru;
                 case SystemLanguage.Thai: return LanguageCode.th;
-                default: return LanguageCode.en;
+                default: return defaultCode;
             };
         }
 
