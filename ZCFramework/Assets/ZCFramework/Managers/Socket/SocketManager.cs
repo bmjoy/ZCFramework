@@ -154,10 +154,7 @@ namespace ZCFrame
             while (queue != null && queue.Count > 0)
             {
                 NetPacket packet = queue.Dequeue();
-                packet.logPacket("分发");
-
-                //Protobuf.Person person = packet.GetBody<Protobuf.Person>();
-                //Debug.Log(person.Age + "  " + person.Name + "  " + person.NameList[0]);
+                packet.LogPacket("分发");
 
                 if (lastSendMessageTime.ContainsKey(packet.Opcode))
                 {
@@ -216,7 +213,7 @@ namespace ZCFrame
                 //没有监听的消息
                 else
                 {
-                    packet.logPacket("忽略消息");
+                    packet.LogPacket("忽略消息");
                 }
             }
         }
@@ -417,7 +414,7 @@ namespace ZCFrame
 
                 if (allowFrequent ? true : !haveLastTime)
                 {
-                    packet.logPacket("发送");
+                    packet.LogPacket("发送");
                     connectDictionary[connectType].SendMessage(packet.Encoder(logHead));
                 }
 

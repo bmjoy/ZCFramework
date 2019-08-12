@@ -582,6 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba37f90e21601764aafeeb3fd3391403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DebugLogProto: 0
 --- !u!1 &524033287
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,8 +841,8 @@ GameObject:
   - component: {fileID: 906363650}
   - component: {fileID: 906363651}
   - component: {fileID: 906363652}
-  - component: {fileID: 906363653}
   - component: {fileID: 906363654}
+  - component: {fileID: 906363653}
   m_Layer: 0
   m_Name: Test
   m_TagString: Untagged
@@ -956,7 +957,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 906363644}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43d313bb56fd09a42a01d85668c29099, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ead8a939bd126242aef4ce570f02fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &906363654

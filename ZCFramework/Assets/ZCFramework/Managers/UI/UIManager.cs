@@ -28,9 +28,9 @@ namespace ZCFrame
         /// </summary>
         /// <typeparam name="T">窗体类型</typeparam>
         /// <param name="uiFormId">窗体编号</param>
-        internal void OpenUIForm<T>(int uiFormId) where T : UIFormBase, new()
+        internal void OpenUIForm<T>(int uiFormId, object userData) where T : UIFormBase, new()
         {
-            GetUIFormById<T>(uiFormId).Open();
+            GetUIFormById<T>(uiFormId).Open(userData);
         }
 
         /// <summary>
@@ -44,16 +44,6 @@ namespace ZCFrame
         {
              GetUIFormById<T>(uiFormId).Open(arg1);
 
-        }
-
-        internal void OpenUIForm<T, T1, T2>(int uiFormId, T1 arg1, T2 arg2) where T : UIFormBase, new()
-        {
-            GetUIFormById<T>(uiFormId).Open(arg1, arg2);
-        }
-
-        internal void OpenUIForm<T, T1, T2, T3>(int uiFormId, T1 arg1, T2 arg2, T3 arg3) where T : UIFormBase, new()
-        {
-            GetUIFormById<T>(uiFormId).Open(arg1, arg2, arg3);
         }
 
 
@@ -120,7 +110,8 @@ namespace ZCFrame
         /// <returns></returns>
         private GameObject LoadUIFormObject()
         {
-            GameObject go = new GameObject();
+            GameObject go = Resources.Load<GameObject>("TaskUIForm");
+            go = UnityEngine.Object.Instantiate(go);
             return go;
         }
 

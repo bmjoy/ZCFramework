@@ -25,7 +25,7 @@ public partial class ChapterDBModel : DataTableDBModelBase<ChapterDBModel, Chapt
     protected override void LoadList(MMO_MemoryStream ms)
     {
         int rows = ms.ReadInt();
-        int columns = ms.ReadInt();
+        ms.ReadInt();
 
         for (int i = 0; i < rows; i++)
         {

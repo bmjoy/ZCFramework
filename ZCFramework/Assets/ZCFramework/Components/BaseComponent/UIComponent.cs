@@ -117,31 +117,9 @@ namespace ZCFrame
         /// </summary>
         /// <typeparam name="T">窗体类型</typeparam>
         /// <param name="uiFormId">窗体编号</param>
-        internal void OpenUIForm<T>(int uiFormId) where T : UIFormBase, new()
+        internal void OpenUIForm<T>(int uiFormId,object userData = null) where T : UIFormBase, new()
         {
-            m_UIManager.OpenUIForm<T>(uiFormId);
-        }
-
-        /// <summary>
-        /// 打开UI窗体
-        /// </summary>
-        /// <typeparam name="T"><窗体类型/typeparam>
-        /// <typeparam name="T1">参数1类型</typeparam>
-        /// <param name="uiFormId">窗体编号</param>
-        /// <param name="arg1">参数1</param>
-        public void OpenUIForm<T, T1>(int uiFormId, T1 arg1) where T : UIFormBase, new()
-        {
-            m_UIManager.OpenUIForm<T, T1>(uiFormId, arg1);
-        }
-
-        public void OpenUIForm<T, T1, T2>(int uiFormId, T1 arg1, T2 arg2) where T : UIFormBase, new()
-        {
-            m_UIManager.OpenUIForm<T, T1, T2>(uiFormId, arg1, arg2);
-        }
-
-        public void OpenUIForm<T, T1, T2, T3>(int uiFormId, T1 arg1, T2 arg2, T3 arg3) where T : UIFormBase, new()
-        {
-            m_UIManager.OpenUIForm<T, T1, T2, T3>(uiFormId, arg1, arg2, arg3);
+            m_UIManager.OpenUIForm<T>(uiFormId, userData);
         }
 
 

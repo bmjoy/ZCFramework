@@ -168,7 +168,7 @@ namespace ZCFrame
         }
 
 
-        public void logPacket(string logHead)
+        public void LogPacket(string logHead)
         {
 #if ON_EDITOR
 		if (Opcode == MesOpcode.FISH_CREATE_MONSTER || Opcode == MesOpcode.FISH_SYN_SHELL || Opcode == MesOpcode.HEARTBEAT || Opcode == MesOpcode.GET_SERVER_TIME

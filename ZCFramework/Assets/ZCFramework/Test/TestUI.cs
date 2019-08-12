@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using ZCFrame;
 
 
@@ -30,7 +31,6 @@ public class TestUI : MonoBehaviour
             GameEntry.UI.OpenUIForm<TaskUIForm>(2);
         }
 
-        Variable<string> xx = Variable<string>.Alloc();
     }
 }
 
@@ -39,7 +39,8 @@ public class TaskUIForm : UIFormBase
 {
     protected override void OnInit()
     {
-        Debug.Log("初始化");
+       
+        Debug.Log("初始化"); 
     }
 
 

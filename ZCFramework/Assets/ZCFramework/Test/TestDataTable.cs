@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ZCFrame;
+
 
 public class TestDataTable : MonoBehaviour
 {
@@ -25,11 +25,11 @@ public class TestDataTable : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
            
-            StartCoroutine(waiter());
+            StartCoroutine(Waiter());
         }
     }
 
-    private  IEnumerator waiter()
+    private  IEnumerator Waiter()
     {
         GameLevelDBModel gl = new GameLevelDBModel();
         gl.LoadData();
