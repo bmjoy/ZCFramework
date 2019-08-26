@@ -40,7 +40,9 @@ public class TaskUIForm : UIFormBase
     protected override void OnInit()
     {
        
-        Debug.Log("初始化"); 
+        Debug.Log("初始化");
+        Button closeBtn = UIFormTransform.Find("CloseBtn").GetComponent<Button>();
+        closeBtn.onClick.AddListener(Close);
     }
 
 

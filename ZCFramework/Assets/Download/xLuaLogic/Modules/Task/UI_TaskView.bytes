@@ -2,13 +2,14 @@ UI_TaskView = {};
 
 local this = UI_TaskView;
 
-function UI_TaskView.OnInit(UIFormTransform)
+
+function UI_TaskView.OnInit(UIFormTransform, CloseAction)
 
     UI_TaskCtrl.OnInit(UIFormTransform);
 
     this.closeBtn = UIFormTransform:Find("CloseBtn"):GetComponent("UnityEngine.UI.Button");
     this.closeBtn.onClick:AddListener(function()
-        print("on clicked ")
+        CloseAction();
     end)
 end
 

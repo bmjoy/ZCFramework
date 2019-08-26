@@ -12,7 +12,7 @@ namespace ZCFrame
     public class LuaForm : UIFormBase
     {
         [CSharpCallLua]
-        public delegate void OnInitHandler(Transform transform);
+        public delegate void OnInitHandler(Transform transform, System.Action closeAction);
         OnInitHandler onInit;
 
         [CSharpCallLua]
@@ -45,16 +45,14 @@ namespace ZCFrame
             scriptEnv.SetMetaTable(meta);
             meta.Dispose();
 
-
             string name = "UI_TaskView";
 
             onInit = scriptEnv.GetInPath<OnInitHandler>(name + ".OnInit");
             onOpen = scriptEnv.GetInPath<OnOpenHandler>(name + ".OnOpen");
             onClose = scriptEnv.GetInPath<OnCloseHandler>(name+ ".OnClose");
             onBefore = scriptEnv.GetInPath<OnBeforeHandler>(name+".OnBefore");
-
             scriptEnv.Set("self", this);
-            onInit?.Invoke(UIFormTransform);
+            onInit?.Invoke(UIFormTransform, Close);
         }
 
         protected override void OnOpen(object userData)
